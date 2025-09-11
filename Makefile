@@ -12,7 +12,7 @@ BINARY_NAME=lazynet
 BINARY_UNIX=$(BINARY_NAME)
 
 # Main package location
-MAIN_PACKAGE=./cmd/main.go
+MAIN_PACKAGE=./cmd/lazynet/main.go
 
 all: help
 

@@ -73,6 +73,8 @@ Actions like ping (`p`) run in a convenient modal overlay, making diagnostics ea
 
 ## Installation
 
+### Option 1: Build from Source
+
 Ensure you have **Go (version 1.21 or newer)** installed on your system.
 
 ```bash
@@ -85,3 +87,16 @@ go mod tidy
 
 # Build the binary (using Makefile)
 make build
+```
+
+### Option 2: Using Nix
+
+If you have [Nix](https://nixos.org/download.html) installed, you can run LazyNet directly without cloning:
+
+```bash
+# Run directly from GitHub
+nix run 'git+https://github.com/sureshkrishnan-v/lazynet'
+
+# Or with SSH
+nix run 'git+ssh://git@github.com/sureshkrishnan-v/lazynet'
+```

